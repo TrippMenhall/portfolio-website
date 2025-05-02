@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 20px;
+  transition: 0.4s cubic-bezier(.4,0,.2,1);
+  box-shadow: none;
+  border: outset rgba(36, 54, 74, 0.0) 2px;
+  cursor: pointer;
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+.leftCol {
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.years {
+  color: #8892b0;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.rightCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.title {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.company {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.arrow {
+  font-size: .8rem;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+}
+
+.description {
+  color: #8892b0;
+  font-size: .875rem;
+  margin: 12px 0 24px 0;
+  max-width: 700px;
+}
+
+.languages {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.language {
+  background: rgb(254, 95, 85, 0.1);
+  color: rgb(254, 95, 85);
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
+.card:hover {
+  background: rgba(36, 54, 74, 0.3);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  border: outset rgba(36, 54, 74, 0.1) 2px;
+}
+
+.card:hover .title,
+.card:hover .company {
+  color: rgb(254, 95, 85);
+}
+
+.card:hover .arrow {
+  transform: translate(4px, -4px);
+} 

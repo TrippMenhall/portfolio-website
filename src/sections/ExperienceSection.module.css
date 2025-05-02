@@ -1,0 +1,25 @@
+.resumeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: color 0.3s;
+  margin-left: 20px;
+}
+
+.resumeLink:hover {
+  color: rgb(254, 95, 85);
+}
+
+.resumeArrow {
+  font-size: .8rem;
+  translate: -2px 2px;
+  transition: transform 0.3s;
+}
+
+.resumeLink:hover .resumeArrow {
+  transform: translate(4px, -4px);
+} 
