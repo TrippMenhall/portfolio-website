@@ -74,6 +74,9 @@ export default function App() {
               {isTripp ? 'Tripp Menhall' : 'Dalton Menhall'}
             </h1>
             <h2 className="sidebar-role">Software Engineer</h2>
+            <p className="location">
+              📍 Worcester, MA
+            </p>
             <p className="sidebar-desc">
               Sophomore studying Software Engineering at Quinnipiac University.
             </p>
