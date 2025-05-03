@@ -3,6 +3,7 @@ import './App.css';
 import SocialButton from './SocialButton';
 import githubMark from './assets/github-icon.svg';
 import linkedMark from './assets/linkedIn-icon.svg';
+import emailMark from './assets/email-icon.svg';
 import AboutSection from './sections/AboutSection';
 import ExperienceSection from './sections/ExperienceSection';
 import ProjectsSection from './sections/ProjectsSection';
@@ -99,6 +100,7 @@ export default function App() {
           <div className="sidebar-footer">
             <SocialButton image={githubMark} link="https://github.com/TrippMenhall" alt="GitHub" />
             <SocialButton image={linkedMark} link="https://www.linkedin.com/in/dalton-menhall/" alt="LinkedIn" />
+            <SocialButton image={emailMark} link="mailto:dwmiii5@hotmail.com" alt="Email" />
           </div>
         </aside>
         <main className="main-content" ref={mainContentRef}>
