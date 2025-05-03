@@ -79,6 +79,7 @@ a:hover {
 
 .section-list {
   margin-top: 60px;
+  width: 50%;
 }
 
 .section-link {
@@ -202,6 +203,11 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+}
+
+.photo-text p {
+  color: white;
+  font-weight: bold;
 }
 
 .clickable-name {

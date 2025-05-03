@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ProjectCard.module.css';
 
 export default function ProjectCard({
-  image,
+  imageRef,
   title,
   projectUrl,
   description,
@@ -23,7 +23,7 @@ export default function ProjectCard({
       style={{ cursor: projectUrl ? 'pointer' : 'default' }}
     >
       <div className={styles.leftCol}>
-        <img src={image} alt="Project preview" className={styles.image} />
+        <img src={imageRef} alt="Project preview" className={styles.image} />
       </div>
       <div className={styles.rightCol}>
         <div className={styles.header}>

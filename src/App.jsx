@@ -23,6 +23,14 @@ export default function App() {
   const sectionRefs = useRef({});
   const mainContentRef = useRef(null);
 
+  const scrollToSection = (sectionId) => {
+    const offset = 100;
+    const element = sectionRefs.current[sectionId];
+    const mainContent = mainContentRef.current;
+    const y = element.offsetTop - offset;
+    mainContent.scrollTo({ top: y, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = mainContentRef.current.scrollTop + 120; // offset for header
@@ -67,7 +75,7 @@ export default function App() {
             </h1>
             <h2 className="sidebar-role">Software Engineer</h2>
             <p className="sidebar-desc">
-              Description
+              Sophomore studying Software Engineering at Quinnipiac University.
             </p>
             <nav className="section-list">
               {sections.map((section) => (
@@ -77,11 +85,7 @@ export default function App() {
                   className={`section-link${activeSection === section.id ? ' active' : ''}`}
                   onClick={e => {
                     e.preventDefault();
-                    const offset = 100; // adjust this value as needed
-                    const element = sectionRefs.current[section.id];
-                    const mainContent = mainContentRef.current;
-                    const y = element.offsetTop - offset;
-                    mainContent.scrollTo({ top: y, behavior: 'smooth' });
+                    scrollToSection(section.id);
                   }}
                 >
                   {section.label}
@@ -100,7 +104,7 @@ export default function App() {
             ref={el => (sectionRefs.current['about'] = el)}
             className="section"
           >
-            <AboutSection />
+            <AboutSection scrollToSection={scrollToSection} />
           </section>
           <section
             id="experience"
@@ -121,7 +125,7 @@ export default function App() {
             <PhotoPortfolioButton />
           </div>
           <div className='foot-text'>
-            <p>Coded in <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> by me. Built with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a>. Deployed with <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>. All text is set in the <a href="https://rsms.me/inter/" target="_blank" rel="noopener noreferrer">Inter</a> typeface. Design inspired by <a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer">Brittany Chiang</a>.</p>
+            <p>Coded in <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> by me. Built with <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> and <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">Vite</a>. Deployed with <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>. Text is the <a href="https://rsms.me/inter/" target="_blank" rel="noopener noreferrer">Inter</a> typeface. Design inspired by <a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer">Brittany Chiang</a>.</p>
           </div>
         </main>
       </div>

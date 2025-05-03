@@ -8,20 +8,20 @@ export default function ExperienceSection() {
       <ExperienceCard
         startYear={2025}
         endYear={-1}
-        title="Software Engineering Intern"
+        title="Software Development Intern"
         company="Virtru"
         companyUrl="https://www.virtru.com/"
-        description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi."
+        description="I will be spending 10 weeks this summer contributing to front-end development. I'll be working closely with the engineering team to implement and refine user-facing features, focusing on clean, responsive design and functional UI components. Using Jira for agile task management, I'll participate in sprints and collaborate with my peers to deliver production-quality software. This internship will strengthen my skills in modern web development and give me hands-on experience building secure, user-friendly interfaces at a privacy-focused tech company."
         languages={['JavaScript', 'CSS', 'JSON', 'React', 'Jira']}
       />
       <ExperienceCard
-        startYear={2022}
-        endYear={2025}
-        title="Roblox Games Tester"
-        company="Vitash Studios"
-        companyUrl="https://www.roblox.com/communities/34829731/Vitash-Studios#!/about"
-        description="Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi."
-        languages={['PlayTesting', 'Roblox', 'Luau']}
+        startYear={2023}
+        endYear={-1}
+        title="Sophomore"
+        company="Quinnipiac University"
+        companyUrl="https://www.qu.edu/"
+        description="Description"
+        languages={['3.68', 'Dean\'s List', 'Class of 2027']}
       />
       <a
         href="/resume.pdf"
