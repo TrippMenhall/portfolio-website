@@ -24,7 +24,7 @@ export default function ExperienceSection() {
         languages={['3.68', 'Dean\'s List', 'Class of 2027']}
       />
       <a
-        href="/portfolio-website/resume.pdf"
+        href="resume.pdf"
         className={styles.resumeLink}
         target="_blank"
         rel="noopener noreferrer"
