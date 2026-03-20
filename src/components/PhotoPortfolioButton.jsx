@@ -3,7 +3,7 @@ import './PhotoPortfolioButton.css';
 
 export default function PhotoPortfolioButton() {
   const handleClick = () => {
-    window.open('https://sites.google.com/view/tripp-menhall/home', '_blank', 'noopener noreferrer');
+    window.open('https://www.trippmenhall.com/', '_blank', 'noopener noreferrer');
   };
 
   return (
